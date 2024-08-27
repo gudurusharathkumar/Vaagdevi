@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1 id="res"></h1>
+    <button class="btn" value="1">1</button>
+    <button class="btn" value="2">2</button>
+    <button class="btn" value="3">3</button>
+    <button class="btn" value="4">4</button>
+    <button class="btn" value="5">5</button>
+    <button class="btn" value="6">6</button>
+    <button class="btn" value="7">7</button>
+    <button class="btn" value="8">8</button>
+    <button class="btn" value="9">9</button>
+    <button class="btn" value="0">0</button>
+    <button class="btn" value="+">+</button>
+    <button class="btn" value="-">-</button>
+    <button class="btn" value="*">*</button>
+    <button class="btn" value="/">/</button>
+    <button class="btn" value="=">=</button>
+    <button class="btn" value="clear">clear</button>
+    <script>
+        var myvar = document.querySelectorAll(".btn");
+        {
+        console.log(myvar);
+        for (let i=0; i<myvar.length; i++)
+        {
+            myvar[i].addEventListener('click', function (){
+                exp = exp + myvar[i].value;
+                document.getElementById("res").innerHTML = exp;
+            }
+            if (myvar[i].value === "=") 
+                {
+                    exp=eval(exp);
+                }
+            
+            else if (myvar[i].value)==="clear")
+            {
+                exp = "0";
+            }
+            else
+              exp = exp+myvar[i].value;
+            document.getElementById("res").innerHTML = exp;
+        };
+        }
+    </script>
+
+</body>
+
+</html>

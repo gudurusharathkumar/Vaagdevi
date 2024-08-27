@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <form action="action_page.php" method="post">
+    <div id="box1">
+        <label for="fname">FirstName</label>
+        <input type="text" id="'fname" name="fname">
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    
+        <label for="lname">LastName</label>
+        <input type="text" id="'lname" name="lname">
+         <br>
+         <br>
+        <label for="pass">Password</label>
+        <input type="password" id="'pass" maxlength="12">
+        <br>
+        <br>
+        <label for="checkbox">show password</label>
+        <input type="checkbox">
+         <br>
+         <br>
+        <input type="submit">
+
+   
+        
+    <script>
+        let pwd=document.getElementById("pwd");
+        let check=document.getElementById("check");
+        {
+        check.addEventListener('change',function()
+        {
+            var attr=pwd.getAttribute("type");
+            if(attr==="password")
+            pwd.setAttribute("type","text");
+            else
+            pwd.setAttribute("type","password");
+
+        })
+        var document.getElementById("uname");
+        uname.addEventListener('input',function()
+        
+        
+        
+            
+            if(uname.value.length>10)
+            {
+                document.getElementById("c1").classList.add('c1-fail');
+                document.getElementById("c1").classList.add('c1-pass');
+
+            }
+            else{
+                document.getElementById("c1").classList.add('c1-pass'); 
+                document.getElementById("c1").classList.add('c1-fail');
+            }
+            let username=uname.value;
+            if(username.codePointAt(0)>=48) && usename.codePointAt(0)<=57)
+            {
+                document.getElementById("c2").classList.remove('c1-fail'); 
+                document.getElementById("c2").classList.add('c1-pass');  
+            }
+            else{
+                document.getElementById("c2").classList.add('c1-fail'); 
+                document.getElementById("c2").classList.add('c1-pass');
+            }
+            var trimValue=uname.trim();
+            if(trimValue===username)
+            {
+                document.getElementById("c3").classList.add('c1-fail'); 
+                document.getElementById("c3").classList.add('c1-pass');
+            }
+            else
+            {
+                document.getElementById("c3").classList.add('c1-fail'); 
+                document.getElementById("c3").classList.add('c1-pass');
+            }
+        };
+       
+    </script>
+    
+</body>
+</html>

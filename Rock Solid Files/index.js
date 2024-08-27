@@ -1,0 +1,16 @@
+// // console.log("sharath");
+// // console.log('kumar');
+// // console.log(`adwaitha`);
+// // window.alert(`This is an alert message`);
+// // window.alert(`alert message to adwaitha`);
+// document.getElementById("myH1").textContent="love";
+// document.getElementById("myP").textContent="Love is life line";
+let x=25;
+console.log(x);
+let age=30;
+console.log(age);
+let firstName="Bro";
+let favoritefood="pizza";
+console.log(typeof firstName);
+console.log(`your name is ${firstName}`);
+console.log(`you like mostly ${favoritefood}`);

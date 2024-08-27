@@ -1,0 +1,9 @@
+class pattern {
+public statc void main(String[] arg) {
+
+int  n  = 4;
+
+
+
+}
+}

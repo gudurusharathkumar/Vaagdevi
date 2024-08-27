@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        body{
+            background-image: repeating-linear-gradient(yellow 20%,green 30%,blue 60%);
+        }
+        h1{
+            background-color:aqua;
+        }
+        .myclassroom{
+            background-color:blue;  
+        }
+        #myid{
+            background-color:green;   
+        }
+        #myid2{
+            background-color:red;   
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>hello this is session</h1>
+    <h1 class="my class room">hello this is session</h1>
+    <h1 class="my class room" id="myid">hello this is session</h1>
+    <h1 class="my class room" id="myid2" style="background-color:coral;">hello this is session</h1>
+    
+</body>
+</html>

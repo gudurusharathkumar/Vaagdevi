@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .child {
+            width: 50%;
+            overflow: hidden;
+        }
+
+        .child>p img {
+            width: 50%;
+        }
+
+        .child:nth-child(odd) p>img {
+            float: right;
+        }
+
+        .child:nth-child(even) p>img {
+            float: left;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+
+
+            <p><img src="prabha.jpg" height="300" width="340">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi voluptatem vero deleniti quam obcaecati tenetur labore alias cupiditate recusandae vel.</p>
+        </div>
+        <div class="child">
+
+            <p><img src="prabha.jpg" height="300" width="340">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi voluptatem vero deleniti quam obcaecati tenetur labore alias cupiditate recusandae vel.</p>
+        </div>
+        <div class="child">
+            <p><img src="prabha.jpg" height="300" width="340">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi voluptatem vero deleniti quam obcaecati tenetur labore alias cupiditate recusandae vel.</p>
+        </div>
+        <div class="child">
+            <p><img src="prabha.jpg" height="300" width="340">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi voluptatem vero deleniti quam obcaecati tenetur labore alias cupiditate recusandae vel.</p>
+        </div>
+
+
+</body>
+
+</html>
